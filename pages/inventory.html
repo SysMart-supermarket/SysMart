@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Supermarket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css" />
+    <link rel="stylesheet" href="../assets/css/animated.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body style="background-color: #d4edda;">
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-15">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <!-- <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Chain App Dev">
+            </a> -->
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="scroll-to-section dropdown">
+                  <a href="#components" class="dropdown-toggle" data-toggle="dropdown">Components</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./inventory.html">Inventory Management</a></li>
+                      <li><a href="./supply.html">Supply Chain Optimization</a></li>
+                      <li><a href="./queue.html">Queue Optimization</a></li>
+                      <li><a href="./priceing.html">Pricing and Promotion Optimization</a></li>
+                  </ul>
+              </li>
+                <li><a href="#gap">Research Gap </a></li>
+                <li>
+                  <a href="#problem" class="special-link"
+                    >Research Problem & Solution
+                  </a>
+                </li>
+                <li>
+                  <a href="#objective" class="special-link"
+                    >Research Objectives
+                  </a>
+                </li>
+                <li>
+                  <a href="#methodology" class="special-link">Methodology</a>
+                </li>
+             
+              </ul>
+
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner wow fadeIn" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content show-up header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2> Dynamic Inventory Management </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="introduction" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Introduction
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              Organizing shelves in large-scale supermarkets is a critical factor in enhancing both consumer 
+              experience and operational efficiency. The placement of products directly influences customer 
+              behavior, product visibility, and, ultimately, sales performance. This thesis explores the development 
+              of an innovative recommendation system that optimizes shelf arrangement through reinforcement 
+              learning techniques. Specifically, Q-learning and epsilon-greedy algorithms were employed to 
+              construct the model. These algorithms address key challenges of exploration and exploitation, which 
+              are fundamental to reinforcement learning, particularly in environments with dynamic and large
+              scale datasets like supermarkets. 
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              Traditionally, reinforcement learning has been underutilized for large-scale datasets in retail due to 
+              these challenges. However, this work demonstrates its feasibility and effectiveness by simulating the 
+              supermarket environment. Through repeated learning cycles, the proposed system efficiently 
+              learned and adapted optimal shelf organization strategies, which contributed to more effective 
+              product placement and improved overall store performance.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              Adding a fresh perspective to the very small amount of research on reinforcement learning 
+              applications in large-scale retail settings, this thesis tackles the challenges posed by dynamic 
+              customer behavior and shifting product demand. The accomplishment of this research paves the 
+              path for additional investigation into machine learning techniques to improve operational decision
+              making in the retail industry, opening the door to more sophisticated, automated systems for shop 
+              management.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gap" class="about-us section" style="padding: 50px 0">
+      <div class="container mt-10">
+        <h3 style="font-weight: bold; color: #2c3e50; margin-bottom: 20px">Research Gap</h3>
+        <table class="table table-bordered custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Research Topic</th>
+              <th scope="col">Research 1</th>
+              <th scope="col">Research 2</th>
+              <th scope="col">Research 3</th>
+              <th scope="col">Research 4</th>
+              <th scope="col">Research 5</th>
+              <th scope="col">Proposed Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adaptability to uncertain Market Conditions</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Balancing Exploration and Exploitation in Q Learning</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Minimizing Stockouts through continuous Optimization</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Real-Time Learning Mechanism</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Adapting to inventory dynamics in large scale Businesses</td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+    <div id="problem" class="about-us section" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Research Problem & Solution
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <h5>Proposed Problem</h5>
+
+              
+                <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              The research problem revolves around the challenges of using Q-learning in large-scale supermarket 
+              inventory management systems, where the complexities of handling vast data volumes and dynamic 
+              inventory operations make traditional Q-learning approaches insufficient. While Q-learning has been 
+              widely applied in smaller settings, its applicability to larger supermarkets is limited by its inability to 
+              efficiently scale, particularly when addressing the exploration-exploitation dilemma inherent in 
+              reinforcement learning. This issue is further compounded by the need to optimize shelf organization 
+              in these complex environments, making it necessary to rethink existing frameworks to better manage 
+              the inventory of large supermarkets. 
+              </p>
+              <br />
+              <h5>Proposed Solution</h5>
+
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              The proposed solution focuses on developing a hybrid model that integrates Q-learning which can 
+              handle exploration-exploitation with combining the algorithms, namely epsilon-greedy, Upper 
+              Confidence Bound (UCB), and Thompson sampling. By combining these approaches, the research 
+              aims to mitigate the shortcomings of traditional Q-learning and enhance decision-making in 
+              dynamic, large-scale supermarket environments. A hybrid approach was tested, leading to an 
+              improved recommendation system for shelf organization with a significant accuracy rate of 62%. 
+              Further refinement of the model, incorporating epsilon-greedy adjustments, resulted in a 90% 
+              accuracy, making it highly effective in optimizing shelf layouts while ensuring scalability and 
+              robustness in handling large datasets by handling exploration and exploitation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="objective" class="about-us section">
+        <div class="container">
+          <div class="row">
+            <!-- First Column -->
+            <h3 class="card-title" style="font-weight: bold; color: #2c3e50; margin-bottom: 20px;">
+                Research Objectives
+              </h3>
+            <div class="col-lg-6 mb-4">
+              
+              <div class="card h-100">
+                <div class="card-body">
+                 
+                  <h6>Optimizing Inventory Management in Large-Scale Supermarkets Using Enhanced Q-Learning 
+                    Techniques </h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    Aiming at addressing the longstanding problem of successfully handling the large data 
+                    sets and navigating the dilemmas during the exploration-exploitation stage of Qlearning, this 
+                    research paper presents an integrated solution that significantly improves the current inventory 
+                    management systems of the large-scale supermarkets.                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Design and Implement Q-learning Algorithm for Large-Scale Supermarket Inventory 
+                    Recommendation Systems </h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This sub-objective is about the careful design and execution of a Q
+                    learning algorithm that will (with flexibility and precision) match the complex nature of operations in 
+                    large-scale supermarkets. Using novel algorithmic design approaches and optimization techniques 
+                    as a basis, the strategic goal becomes the development of a robust system architecture which 
+                    dynamically adjusts to varying market scenarios as well as massive data processing.                   </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Second Column -->
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6> Develop a Dashboard for the Recommendation System</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    While developing the Q-learning AI, the 
+                    second objective is to design an interactive dashboard that communicates with the AI through an 
+                    easy-to-use interface. The dashboard becomes an essential tool in the hands of all the stakeholders 
+                    who need realtime data about inventory recommendations that are believed to be generated by the 
+                    Q-learning algorithm. Integration of immersive visualization and extensive data analytics functions, 
+                    aims at equipping decision-makers with useful data-driven information resources, which will 
+                    consequently help for the implementation of informed decision-making and performance 
+                    enhancement across supermarket environments.                  </p>
+                </div>
+              </div>
+            </div>
+      
+           
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="methodology" class="about-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Methodology
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              This research presents a methodology for optimizing shelf organization in supermarkets using a 
+hybrid Q-learning approach to tackle the exploration-exploitation dilemma in reinforcement 
+learning. The study first reviews the limitations of traditional Q-learning, especially its tendency to 
+get trapped in suboptimal policies when handling large datasets. It then evaluates three specific 
+algorithms: epsilon-greedy, Upper Confidence Bound (UCB), and Thompson sampling, which offer 
+different strategies to manage exploration and exploitation.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              Epsilon-greedy predominantly exploits known information while occasionally exploring new 
+              actions. UCB applies an optimistic approach when uncertain, assuming unknown actions may 
+              yield higher rewards. Thompson sampling balances exploiting known strategies with exploring new 
+              actions to gather more information.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              These algorithms were tested in a recommendation system for shelf organization, with UCB and 
+              Thompson sampling reaching 49% accuracy, while epsilon-greedy achieved 5%. A hybrid model 
+              combining elements from all three algorithms was then proposed, leading to an improvement, 
+              reaching 62% accuracy.
+              </p>
+
+              <p
+              style="
+                font-weight: 400;
+                font-size: 16px;
+                color: black;
+                text-align: justify;
+              "
+            >
+            An improved hybrid model, incorporating principles from Q-learning and epsilon-greedy, further 
+            refined the methodology. Through multiple iterations and testing, the hybrid model demonstrated 
+            an accuracy of 90% in shelf optimization, outperforming both traditional Q-learning and individual 
+            algorithms. This approach allows for better exploration of product placement possibilities, ensuring 
+            efficient exploitation of learned policies. 
+            The model was validated through simulations and real-world tests, showing its adaptability to 
+            various shelving configurations. This research demonstrates that combining Q-learning with the 
+            epsilon-greedy strategy significantly enhances decision-making in dynamic environments like 
+            supermarkets.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/animation.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/popup.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>

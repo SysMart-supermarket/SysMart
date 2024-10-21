@@ -1,0 +1,534 @@
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .testimonial-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+    padding: 30px;
+    margin: 40px 30px;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .testimonials .testimonial-item .stars {
+    margin-bottom: 15px;
+  }
+  
+  .testimonials .testimonial-item .stars i {
+    color: #ffc107;
+    margin: 0 1px;
+  }
+  
+  .testimonials .testimonial-item .testimonial-img {
+    width: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--background-color);
+    margin: 0 auto;
+  }
+  
+  .testimonials .testimonial-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #060606;
+    padding: 2px;
+  
+  }
+  
+  .testimonials .testimonial-item h4 {
+    font-size: 14px;
+    color: #000000;
+    margin: 2px 0; /* Reduced margin for less space between lines */
+    text-align: left; /* Align the h4 to the left */
+}
+
+.testimonials .testimonial-item p {
+    font-weight: 500;
+    color: black;
+    margin: 2px 0; /* Reduced margin for less space between lines */
+    text-align: left; /* Align the paragraph text to the left */
+}
+
+
+
+
+  
+  
+  .testimonials .swiper-wrapper {
+    height: auto;
+  }
+  
+  .testimonials .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    opacity: 1;
+  }
+  
+  .testimonials .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+  }
+  
+  .testimonials .swiper-slide {
+    opacity: 0.3;
+  }
+  
+  @media (max-width: 1199px) {
+    .testimonials .swiper-slide-active {
+      opacity: 1;
+    }
+  
+    .testimonials .swiper-pagination {
+      margin-top: 0;
+    }
+  
+    .testimonials .testimonial-item {
+      margin: 40px 20px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .testimonials .swiper-slide-next {
+      opacity: 1;
+      transform: scale(1.12);
+    }
+  }
+  
+  /* Add spacing between supervisor and group member rows */
+.mt-4 {
+    margin-top: 2rem;
+}
+
+
+/*contact us*/
+
+.contact-us {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px 0;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Faq Section
+--------------------------------------------------------------*/
+.faq .section-title {
+    padding-bottom: 20px;
+  }
+  
+  .faq .faq-container .faq-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .faq .faq-container .faq-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq .faq-container .faq-item h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 30px 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .faq .faq-container .faq-item h3 .num {
+    color: var(--accent-color);
+    padding-right: 5px;
+  }
+  
+  .faq .faq-container .faq-item h3:hover {
+    color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-item .faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .faq .faq-container .faq-item .faq-content p {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  
+  .faq .faq-container .faq-item .faq-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .faq .faq-container .faq-item .faq-toggle:hover {
+    color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-active {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 97%);
+    border-color: color-mix(in srgb, var(--accent-color), transparent 80%);
+  }
+  
+  .faq .faq-container .faq-active h3 {
+    color: var(--accent-color);
+  }
+  
+  .faq .faq-container .faq-active .faq-content {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+    padding-top: 10px;
+  }
+  
+  .faq .faq-container .faq-active .faq-toggle {
+    transform: rotate(90deg);
+    color: var(--accent-color);
+  }
+
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-title h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+
+  .starter-section {
+    /* Add your styles here */
+  }
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Timeline item styling */
+.timeline-item {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    position: relative;
+    transition: background-color 0.3s ease;
+    padding: 15px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Circle for the timeline */
+.timeline-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px; /* Space between circle and content */
+}
+
+/* Date and text content styling */
+.timeline-content {
+    position: relative;
+}
+
+.timeline-date {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+/* Line connecting the timeline items */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 20px; /* Align with circle center */
+    top: 50px; /* Start position of the line */
+    height: calc(100% - 50px);
+    width: 2px;
+    background-color: #007bff;
+}
+
+/* Hover effect */
+.timeline-item:hover {
+    background-color: #bae7c7;
+}
+
+
+
+
+
+.card:hover {
+    background-color: #e0f7fa; /* Light blue hover color */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+
+  .custom-table tbody td:first-child {
+    text-align: left; /* Ensures the first column content is aligned to the left */
+    font-weight: bold; /* Makes the research topic more prominent */
+  }
+  
+
+  .main-banner .right-images img {
+    max-width: 250px;
+  }
+
+  .footers {
+    /* background-image: url(../images/footer-bg.png); */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 130px;
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+
+  
+.footers .section-heading h4 {
+  line-height: 45px;
+  color: #000000;
+  margin-left: 13%;
+  margin-right: 13%;
+  text-align: center;
+}
+
+.nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  z-index: 1;
+  min-width: 250px; /* Adjust this width as needed */
+}
+
+.nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 8px 16px;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+}
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+.services .service-item {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  height: 100%;
+  padding: 30px;
+  transition: 0.3s;
+  border-radius: 10px;
+  display: flex;
+}
+
+.services .service-item .icon {
+  font-size: 32px;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.services .service-item h3 {
+  color: color-mix(in srgb, var(--heading-color), transparent 25%);
+  font-weight: 700;
+  font-size: 22px;
+  transition: 0.3s;
+}
+
+.services .service-item p {
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  transition: 0.3s;
+}
+
+.services .service-item .read-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.services .service-item .read-more i {
+  margin-left: 10px;
+}
+
+.services .service-item.item-cyan .icon {
+  color: #0dcaf0;
+  border: 1px solid #0dcaf0;
+  background: rgba(13, 202, 240, 0.1);
+}
+
+.services .service-item.item-orange .icon {
+  color: #fd7e14;
+  border: 1px solid #fd7e14;
+  background: rgba(253, 126, 20, 0.1);
+}
+
+.services .service-item.item-teal .icon {
+  color: #20c997;
+  border: 1px solid #20c997;
+  background: rgba(32, 201, 151, 0.1);
+}
+
+.services .service-item.item-red .icon {
+  color: #df1529;
+  border: 1px solid #df1529;
+  background: rgba(223, 21, 4, 0.1);
+}
+
+.services .service-item.item-indigo .icon {
+  color: #6610f2;
+  border: 1px solid #6610f2;
+  background: rgba(102, 16, 242, 0.1);
+}
+
+.services .service-item.item-pink .icon {
+  color: #f3268c;
+  border: 1px solid #f3268c;
+  background: rgba(243, 38, 140, 0.1);
+}
+
+.services .service-item:hover {
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+}
+
+.services .service-item:hover h3 {
+  color: var(--heading-color);
+}
+
+.services .service-item:hover p {
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+}
+
+.service-item {
+  width: 100%; /* To make it responsive */
+  min-height: 250px; /* Ensure consistent height for each item */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd; /* Optional for better visibility */
+  border-radius: 10px;
+}
+
+.service-item img {
+  max-width: 150px; /* Maintain consistent image size */
+  max-height: 100px; /* Maintain consistent image size */
+  object-fit: contain; /* Ensure the image does not get distorted */
+}
+
+.service-item h3 {
+  margin-top: 15px; /* Add some space between the image and text */
+  font-size: 1.2rem;
+}

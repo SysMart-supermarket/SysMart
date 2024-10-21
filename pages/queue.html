@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Supermarket</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/templatemo-chain-app-dev.css" />
+    <link rel="stylesheet" href="../assets/css/animated.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+
+  <body style="background-color: #d4edda;">
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown">
+      <div class="container">
+        <div class="row">
+          <div class="col-15">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <!-- <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" alt="Chain App Dev">
+            </a> -->
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li><a href="../index.html">Home</a></li>
+                <li class="scroll-to-section dropdown">
+                  <a href="#components" class="dropdown-toggle" data-toggle="dropdown">Components</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="./inventory.html">Inventory Management</a></li>
+                      <li><a href="./supply.html">Supply Chain Optimization</a></li>
+                      <li><a href="./queue.html">Queue Optimization</a></li>
+                      <li><a href="./priceing.html">Pricing and Promotion Optimization</a></li>
+                  </ul>
+              </li>
+                <li><a href="#gap">Research Gap </a></li>
+                <li>
+                  <a href="#problem" class="special-link"
+                    >Research Problem & Solution
+                  </a>
+                </li>
+                <li>
+                  <a href="#objective" class="special-link"
+                    >Research Objectives
+                  </a>
+                </li>
+                <li>
+                  <a href="#methodology" class="special-link">Methodology</a>
+                </li>
+               
+              </ul>
+
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="main-banner wow fadeIn" id="top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-6 align-self-center">
+                <div
+                  class="left-content show-up header-text wow fadeInLeft"
+                  data-wow-duration="1s"
+                  data-wow-delay="1s"
+                >
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2>Dynamic Queue Optimization</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="introduction" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Introduction
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                Optimizing consumer satisfaction and operational efficiency in
+                supermarkets, especially in high traffic situations, depends
+                heavily on effective queue management at cashier counters. In
+                multi cashier systems, where customers frequently choose lines
+                for checkout based only on the number of people waiting and
+                ignore the number of products in each cart, this study tackles a
+                major obstacle. Because of the inefficient queue distribution
+                caused by this behavior, customers wait longer at counters with
+                higher item counts and use counters with lower counts less
+                frequently, which eventually detracts from the overall shopping
+                experience.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                In order to improve checkout efficiency, we suggest a dynamic
+                queue management system that makes use of cutting-edge
+                technology like IoT devices and real-time monitoring. Our
+                approach integrates a robust object detection model developed
+                using the PyTorch framework and Hugging Face Transformers
+                library. This method determines the length of lines and the
+                contents of each cart by using CCTV footage to identify and
+                categorize consumers and cashiers.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                The system counts the items that are in each customer's shopping
+                basket using Internet of Things (IoT) sensors. It then combines
+                this information with CCTV footage to calculate the best cashier
+                allocation. This system distributes the checkout load more
+                evenly and efficiently by dynamically allocating customers to
+                cashier counters based on the number of customers and the
+                complexity of their transactions.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                The processed images, which include visual annotations of queue
+                lengths and the best cashier for each customer, are uploaded to
+                Firebase. As a result, the queue data may be viewed and accessed
+                in real time. This technology offers a faster checkout
+                procedure, which not only increases customer satisfaction
+                overall but also optimizes queue management by cutting down on
+                wait times.
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                The results of this research show that the application of
+                dynamic queue assignment and real-time item counting has the
+                potential to significantly increase both operational efficiency
+                and customer happiness. This study delivers significant insights
+                into and advances in retail queue management techniques,
+                promoting a more efficient and customer-focused approach in
+                supermarket operations by filling in the gaps in current queue
+                management solutions and offering an inclusive, user-friendly
+                system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gap" class="about-us section" style="padding: 50px 0">
+      <!-- Added padding for top and bottom -->
+      <div class="container mt-10">
+        <h3 style="font-weight: bold; color: #2c3e50; margin-bottom: 20px">
+          Research Gap
+        </h3>
+        <!-- Added margin-bottom for spacing -->
+
+        <table class="table table-bordered custom-table">
+          <thead>
+            <tr>
+              <th scope="col">Research Topic</th>
+              <th scope="col">Research 1</th>
+              <th scope="col">Research 2</th>
+              <th scope="col">Research 3</th>
+              <th scope="col">Research 4</th>
+              <th scope="col">Research 5</th>
+              <th scope="col">Proposed Solution</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Complexity of Queue Dynamics with Multiple Cashiers</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Integration of IoT Devices for Real-time Item Counting</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>CCTV-Based Queue Length Monitoring</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Sufficient Real-time Monitoring</td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>
+                Integration of Machine Learning Techniques with IoT device
+              </td>
+              <td><i class="fa fa-times"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+              <td><i class="fa fa-check"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="problem" class="about-us section" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Research Problem & Solution
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <h5>Proposed Problem</h5>
+
+              
+                <p style="font-weight: 500; font-size: 16px; color: black;">How to handle the long queues with multiple cashier systems?</p><br>
+                <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                Supermarkets aim to maintain profitability by improving customer
+                happiness and operational efficiency in the current competitive
+                retail scene. Queue management at cashier counters is one of the
+                key operational components that shapes the entire shopping
+                experience. Even with several cashier counters available,
+                consumers frequently experience lengthy wait times and annoyance
+                when checking out, particularly during busy times. The
+                shortcomings of the existing queue management methods and the
+                decision-making habits of customers are the main causes of this
+                inefficiency in queue management. One of the main problems is
+                that patrons usually select cashier counters based only on the
+                length of the queue; they don't consider the quantity of goods
+                in each customer's cart. This oversimplified method results in
+                an under- or underutilized queue distribution, where certain
+                cashier counters with more customers but smaller carts are
+                severely delayed, while others with more customers but smaller
+                carts are not used as much.
+              </p>
+              <br />
+              <h5>Proposed Solution</h5>
+
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+                In this proposed dynamic queue management system aims to address
+                these challenges by optimizing the real-time distribution of
+                customers to cashier counters. By utilizing CCTV footage to
+                determine the length and state of each cashier's line and IoT
+                sensors to track the number of items in clients' shopping carts,
+                the system can consider both the number of consumers and the
+                intricacy of their transactions. This approach is intended to
+                reduce waiting times, optimize resource usage, and improve the
+                general customer experience in supermarkets. The increasing need
+                in the market for inclusive, user-friendly solutions that serve
+                a wide range of demographics highlights the significance of
+                having such a system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="objective" class="about-us section">
+        <div class="container">
+          <div class="row">
+            <!-- First Column -->
+            <h3 class="card-title" style="font-weight: bold; color: #2c3e50; margin-bottom: 20px;">
+                Research Objectives
+              </h3>
+            <div class="col-lg-6 mb-4">
+              
+              <div class="card h-100">
+                <div class="card-body">
+                 
+                  <h6>Develop an IoT-based Real-Time Item Counting System</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This focuses on creating a system that uses IoT sensors to count items in customers' shopping carts in real-time. The accurate item count will be transmitted to the central queue management system, enabling it to assess transaction complexity and make informed decisions about customer distribution. This ensures that cashiers handling fewer but larger transactions are appropriately balanced with those handling more frequent, smaller transactions.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Implement CCTV-Based Queue Length Monitoring</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This involves deploying CCTV cameras to monitor and analyze the length and state of queues at each cashier counter. By integrating computer vision and image processing techniques, the system will dynamically track the number of customers and their respective queue lengths. This real-time data collection allows the queue management system to respond swiftly to changes, optimizing customer flow and minimizing waiting times.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Second Column -->
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Integrate Machine Learning Algorithms for Decision Making</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This aims to incorporate machine learning algorithms to enhance the decision-making process of the queue management system. These algorithms will analyze historical and real-time data to predict queue dynamics and recommend the best cashier allocation for incoming customers. The adaptive nature of machine learning ensures continuous improvement in system performance, leading to more efficient queue management.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Enhance Real-Time Data Integration for Comprehensive Insights</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This focuses on creating a robust system to integrate data from various sources in real-time, such as IoT devices, CCTV footage, and historical transaction data. By ensuring seamless data integration, the system can provide comprehensive insights into queue dynamics and customer behavior. This holistic approach will help in fine-tuning the queue management process and making data-driven decisions to optimize cashier allocation.
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6>Evaluate System Performance in High-Traffic Supermarkets</h6>
+                  <p style="font-weight: 400; font-size: 16px; color: black; text-align: justify;">
+                    This involves deploying the queue management system in large-scale supermarkets like Cargills Food City, Keels, SPAR, and LAUGFS in Sri Lanka to assess its effectiveness. Performance metrics such as reduced wait times, improved customer satisfaction, and enhanced cashier utilization will be measured. The evaluation will provide valuable insights into the system's impact and highlight areas for further refinement and scalability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <div id="methodology" class="about-us section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 align-self-center">
+            <div class="section-heading">
+              <h3
+                style="font-weight: bold; color: #2c3e50; margin-bottom: 20px"
+              >
+                Methodology
+              </h3>
+              <!-- Added margin-bottom for spacing -->
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              The study employs a systematic approach to develop an optimized queue management system for 
+              supermarkets, aimed at reducing lengthy waiting times at cashier counters. The methodology 
+              consists of interrelated steps that include problem definition, data collection, system design, 
+              implementation, and evaluation. 
+              This initial step involves gathering essential data from various sources. IoT devices equipped with 
+              sensors on shopping carts provide real-time item counts, while strategically placed CCTV cameras 
+              monitor queue lengths. These cameras utilize computer vision techniques to analyze video feeds, 
+              counting the number of customers in line. Additionally, historical transaction data, such as 
+              transaction times and customer flow patterns, is collected to enhance machine learning models for 
+              predicting queue dynamics. 
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              The system integrates data from IoT devices, CCTV cameras, and machine learning algorithms. It 
+              includes components for queue length monitoring, data validation, and image processing using 
+              libraries like OpenCV and PIL. The queue detection model, based on Microsoft's ResNet-50 
+              architecture, accurately identifies and counts customers. IoT devices transmit items count to the 
+              central system, enabling real-time decisions on cashier allocation based on current shopping 
+              behavior
+              </p>
+              <p
+                style="
+                  font-weight: 400;
+                  font-size: 16px;
+                  color: black;
+                  text-align: justify;
+                "
+              >
+              Trained machine learning models utilize historical and real-time data to optimize cashier 
+              assignments, focusing on minimizing wait times. Input images are processed to detect cashiers and 
+              customers, enabling the assignment of the optimal cashier based on queue lengths and item counts. 
+              Overall, this methodology aims to enhance supermarket operations through effective queue 
+              management, leading to improved customer satisfaction and efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/animation.js"></script>
+    <script src="../assets/js/imagesloaded.js"></script>
+    <script src="../assets/js/popup.js"></script>
+    <script src="../assets/js/custom.js"></script>
+  </body>
+</html>
